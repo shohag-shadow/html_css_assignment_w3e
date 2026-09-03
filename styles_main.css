@@ -1,0 +1,48 @@
+.site-main {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    gap: 1%;
+    /* 1% gap between gallery and payment widget */
+}
+
+/* Gallery container takes 75% minus gap allowance */
+.site-main__info {
+    width: calc(75% - 0.75%);
+}
+
+/* Payment widget takes 25% minus gap allowance */
+.site-main__payment {
+    width: calc(25% - 0.25%);
+    background-color: blue;
+}
+
+.site-main__image-gallary {
+    display: flex;
+    gap: 1px;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Main image takes 66.66% of the gallery (50% of screen) */
+.site-main__image-gallary--main {
+    width: calc(66.666% - 0.66px);
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Side column takes 33.33% of the gallery (25% of screen) */
+.site-main__image-gallary--side {
+    width: calc(33.333% - 0.33px);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    /* 1px gap between the two side images */
+}
+
+.site-main__image-gallary--side img {
+    width: 100%;
+    height: calc(50% - 0.5px);
+    object-fit: cover;
+}
