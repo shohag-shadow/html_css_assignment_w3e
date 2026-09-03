@@ -13,28 +13,66 @@
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a href="/" class="site-header__logo" aria-label="Stay and Play home">Stay&amp;Play</a>
-      <nav class="site-header__nav">
-        <ul class="site-header__menu">
-          <li class="site-header__item"><a href="#" class="site-header__link">Home</a></li>
-          <li class="site-header__item"><a href="#" class="site-header__link">Where to Stay</a></li>
-          <li class="site-header__item"><a href="#" class="site-header__link">Things to play</a></li>
-          <li class="site-header__item"><a href="#" class="site-header__link">Group Travel</a></li>
-          <li class="site-header__item"><a href="#" class="site-header__link">Travel Blog</a></li>
-        </ul>
-      </nav>
-      <div class="site-header__actions">
-        <a href="#" class="site-header__book-button">Book a Tee Time</a>
-        <button class="site-header__search" type="button" aria-label="Search"></button>
-        <span aria-hidden="true"></span>
-        <button class="site-header__menu-button" type="button" aria-label="Open navigation menu"
-          aria-expanded="false"></button>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+
+      <a class="site-header__logo" href="/" aria-label="Stay and Play home">
+        Stay&amp;Play
+      </a>
+      <div class="site-header-options">
+
+        <nav class="site-header__nav" aria-label="Primary navigation">
+          <ul class="site-header__menu">
+            <li class="site-header__item">
+              <a class="site-header__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="site-header__item">
+              <a class="site-header__link" href="#">
+                Where to Stay
+              </a>
+            </li>
+            <li class="site-header__item">
+              <a class="site-header__link" href="#">
+                Things to Play
+              </a>
+            </li>
+            <li class="site-header__item">
+              <a class="site-header__link" href="#">
+                Group Travel
+              </a>
+            </li>
+            <li class="site-header__item">
+              <a class="site-header__link" href="#">
+                Travel Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+
+          <a class="site-header__book-button" href="#">
+            <span class="site-header__book-label">
+              Book a Tee Time
+            </span>
+            <img class="site-header__book-icon" src="assets/golf.svg" alt="">
+          </a>
+
+          <button class="site-header__search" type="button" aria-label="Search">
+            <span class="site-header__search-label">Search</span>
+            <img src="assets/search.svg" alt="">
+          </button>
+
+          <button class="site-header__menu-button" type="button" aria-label="Open navigation menu"
+            aria-expanded="false">
+            <img src="assets/menu.svg" alt="">
+          </button>
+
+        </div>
       </div>
     </div>
   </header>
+
 </body>
 
 </html>
