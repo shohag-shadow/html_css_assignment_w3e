@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles_header.css">
   <link rel="stylesheet" href="styles_hero.css">
   <link rel="stylesheet" href="styles_main.css">
+  <link rel="stylesheet" href="styles_payment.css">
 </head>
 
 <body>
@@ -114,9 +115,81 @@
           <img src="/assets/side_img1.jpg" alt="Image of eagle creek golf club">
           <img src="/assets/side_img2.jpg" alt="Image of eagle creek golf club">
         </div>
+        <button class="site-main__image-gallary-view-all" type="button">
+          View all 20 images
+        </button>
+
       </div>
     </section>
     <section class="site-main__payment">
+      <div class="booking-card">
+        <!-- Header / Pricing -->
+        <div class="booking-card__header">
+          <span class="booking-card__price">USD $600</span>
+          <span class="booking-card__price-sub">AVG PER NIGHT</span>
+        </div>
+
+        <!-- Date Inputs -->
+        <div class="booking-card__dates">
+          <div class="booking-card__input-box">
+            <span class="booking-card__label">CHECK-IN</span>
+            <span class="booking-card__value">19 SEP 2025</span>
+            <img class="booking-card__chevron" src="/assets/dropdown.svg" alt="select icon">
+          </div>
+
+          <div class="booking-card__input-box">
+            <span class="booking-card__label">CHECK-OUT</span>
+            <span class="booking-card__value">21 SEP 2025</span>
+            <img class="booking-card__chevron" src="/assets/dropdown.svg" alt="select icon">
+          </div>
+        </div>
+
+        <!-- Guest Selection Input -->
+        <div class="booking-card__input-box booking-card__input-box--full">
+          <span class="booking-card__label">GUESTS</span>
+          <span class="booking-card__value">3 GUESTS, 1 INFANT, 1 PET</span>
+          <img class="booking-card__chevron" src="/assets/dropdown.svg" alt="select icon">
+        </div>
+
+        <!-- Availability Status Banner -->
+        <div class="booking-card__status">
+          <img class="booking-card__status-icon" src="/assets/check-circle.svg" alt="available icon">
+          <span>Dates selected are available</span>
+        </div>
+
+        <!-- Price Breakdown Box -->
+        <div class="booking-card__breakdown">
+          <div class="booking-card__row booking-card__row--sub">
+            <span>PRICE PER NIGHT</span>
+            <span>USD $600</span>
+          </div>
+          <div class="booking-card__row booking-card__row--total">
+            <span>TOTAL PRICE</span>
+            <span>USD $600</span>
+          </div>
+        </div>
+
+        <!-- Primary Action Button -->
+        <button type="button" class="booking-card__btn">CHECK AVAILABILITY</button>
+
+        <!-- Redirect Note -->
+        <div class="booking-card__redirect">
+          <span>You will be redirected to</span>
+          <span class="booking-card__brand">Booking.com</span>
+        </div>
+
+        <!-- Hot Deal Banner -->
+        <div class="booking-card__deal-banner">
+          <img class="booking-card__fire-icon" src="/assets/fire.svg" alt="hot deal icon">
+          <span>Hot Deal - it has been viewed 30 times today</span>
+        </div>
+      </div>
+
+      <!-- Bottom Secondary Banner -->
+      <div class="booking-card__footer-banner">
+        <span>Not the right fit? Check out our other Top Rated Bach Rentals in </span>
+        <a href="#" class="booking-card__footer-link">Orlando</a>
+      </div>
     </section>
   </main>
 </body>

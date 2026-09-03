@@ -3,21 +3,18 @@
     flex-direction: row;
     margin: 1%;
     gap: 1%;
-    /* 1% gap between gallery and payment widget */
 }
 
-/* Gallery container takes 75% minus gap allowance */
 .site-main__info {
     width: calc(75% - 0.75%);
 }
 
-/* Payment widget takes 25% minus gap allowance */
 .site-main__payment {
     width: calc(25% - 0.25%);
-    background-color: blue;
 }
 
 .site-main__image-gallary {
+    position: relative;
     display: flex;
     gap: 1px;
     height: 400px;
@@ -25,24 +22,45 @@
     overflow: hidden;
 }
 
-/* Main image takes 66.66% of the gallery (50% of screen) */
 .site-main__image-gallary--main {
     width: calc(66.666% - 0.66px);
     height: 100%;
     object-fit: cover;
 }
 
-/* Side column takes 33.33% of the gallery (25% of screen) */
 .site-main__image-gallary--side {
     width: calc(33.333% - 0.33px);
     display: flex;
     flex-direction: column;
     gap: 1px;
-    /* 1px gap between the two side images */
 }
 
 .site-main__image-gallary--side img {
     width: 100%;
     height: calc(50% - 0.5px);
     object-fit: cover;
+}
+
+.site-main__image-gallary-view-all {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 32px;
+    padding: 0 14px;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 999px;
+    background: rgba(20, 35, 28, 0.65);
+    color: #ffffff;
+    font-size: 11px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
 }

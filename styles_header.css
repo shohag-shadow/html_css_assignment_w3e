@@ -15,6 +15,17 @@
     --color-book-bg-hover: #95e485;
     --color-search-border: rgba(255, 255, 255, 0.35);
     --color-focus: #ffffff;
+    --color-box-shadow: rgba(0, 0, 0, 0.04);
+    --color-booking-card-price: #0d0d0d;
+
+    /* Additional variables mapped from your widget layout */
+    --color-border-card: #e2e8f0;
+    --color-border-input: #757575;
+    --color-border-breakdown: #ebebeb;
+    --color-text-sub: #8c8c8c;
+    --color-text-brand: #003580;
+    --color-bg-banner: #edf5f9;
+    --color-text-banner: #385261;
 }
 
 body {
