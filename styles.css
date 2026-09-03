@@ -27,6 +27,7 @@ body {
     padding: 1%;
 }
 
+/*Header section*/
 .site-header__inner {
     width: 100%;
     min-height: 44px;
@@ -252,4 +253,20 @@ body {
         height: 23px;
     }
 
+}
+
+.breadcrumb-trail {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+    color: #8a938e;
+    font-size: 12px;
+    padding: 1%;
+}
+
+.breadcrumb-trail a {
+    color: inherit;
+    text-decoration: none;
 }
